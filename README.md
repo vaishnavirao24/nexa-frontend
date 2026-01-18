@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+```md
+# Nexa
 
-## Project info
+Nexa is an AI-powered video intelligence system that analyses uploaded videos and returns structured prediction results through a simple, modern web interface.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Live Website:** https://hello-nexa.vercel.app/
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## What Nexa Does
 
-**Use Lovable**
+- Lets users upload a video from the browser
+- Runs AI inference on the server
+- Returns prediction outputs in a structured format
+- Presents results through a clean and responsive UI
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## How It Works (High Level)
 
-**Use your preferred IDE**
+1. A user uploads a video on the website  
+2. The video is sent to the inference service via an API request (file upload)  
+3. The backend processes the video using an AI pipeline  
+4. The system returns a JSON response containing prediction results  
+5. The UI displays the output in a readable format
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technology Used
 
-Follow these steps:
+- **Web Interface:** React (Vite), TypeScript, Tailwind CSS, shadcn/ui  
+- **Inference Service:** Python, FastAPI, Uvicorn  
+- **AI / Media Pipeline:** PyTorch, OpenCV, NumPy, Pillow  
+- **Deployment:** Website on Vercel, inference service deployed as a live API
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Highlights
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Real deployment (not a notebook-only demo)
+- Clean API-driven inference workflow
+- Responsive UI designed for straightforward usage
+- Service health monitoring endpoint for reliability
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+---
+
+## Roadmap
+
+- Improved result visualisation and UX polish
+- Faster inference and better performance
+- Stronger error reporting and observability
+
+---
+
+## Author
+
+**Sree Vaishnavi Rao**  
+GitHub: https://github.com/vaishnavirao24
+
+---
+
+## License
+
+Intended for learning, experimentation, and portfolio demonstration.
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
