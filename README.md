@@ -1,4 +1,4 @@
-```md
+
 # Nexa
 
 Nexa is an AI-powered video intelligence system that analyses uploaded videos and returns structured prediction results through a simple, modern web interface.
