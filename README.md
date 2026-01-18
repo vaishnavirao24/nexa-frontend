@@ -75,5 +75,5 @@ Website renders results for the user
 
 ## Author
 
-**Vaishnav Rao**  
+**Sree Vaishnavi Rao**  
 GitHub: https://github.com/vaishnavirao24
