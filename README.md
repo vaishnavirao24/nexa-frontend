@@ -1,65 +1,79 @@
-
 # Nexa
 
-Nexa is an AI-powered video intelligence system that analyses uploaded videos and returns structured prediction results through a simple, modern web interface.
+An AI-powered video intelligence system that turns uploaded videos into structured prediction results through a fast, clean web experience.
 
 **Live Website:** https://hello-nexa.vercel.app/
 
 ---
 
-## What Nexa Does
+## Why Nexa
 
-- Lets users upload a video from the browser
-- Runs AI inference on the server
-- Returns prediction outputs in a structured format
-- Presents results through a clean and responsive UI
+Most ML projects stop at notebooks. Nexa is built around a real usage workflow:
+**Upload → Inference → Structured Output → Clear UI**
+
+It is designed to be simple for users and clean for engineering iteration.
 
 ---
 
-## How It Works (High Level)
+## What Nexa Does
 
-1. A user uploads a video on the website  
-2. The video is sent to the inference service via an API request (file upload)  
-3. The backend processes the video using an AI pipeline  
-4. The system returns a JSON response containing prediction results  
-5. The UI displays the output in a readable format
+- Accepts video uploads directly from the browser
+- Runs server-side AI inference on the uploaded video
+- Returns prediction results in a structured JSON format
+- Displays outputs in a readable, user-friendly interface
+
+---
+
+## How It Works
+
+User uploads a video  
+↓  
+Website sends the video to the inference API (multipart/form-data)  
+↓  
+Backend runs the AI pipeline on the video  
+↓  
+Backend returns structured prediction JSON  
+↓  
+Website renders results for the user  
+
+---
+
+## Core Capabilities
+
+- Simple upload flow designed for real users
+- API-driven inference (clean request/response contract)
+- Structured outputs suitable for UI rendering and future extensions
+- Deployed workflow (not limited to local execution)
 
 ---
 
 ## Technology Used
 
-- **Web Interface:** React (Vite), TypeScript, Tailwind CSS, shadcn/ui  
-- **Inference Service:** Python, FastAPI, Uvicorn  
-- **AI / Media Pipeline:** PyTorch, OpenCV, NumPy, Pillow  
-- **Deployment:** Website on Vercel, inference service deployed as a live API
+- **Web Interface:** React (Vite), TypeScript, Tailwind CSS, shadcn/ui
+- **Inference Service:** Python, FastAPI, Uvicorn
+- **AI / Media Pipeline:** PyTorch, OpenCV, NumPy, Pillow
+- **Deployment:** Website on Vercel + inference service deployed as a live API
 
 ---
 
-## Highlights
+## Engineering Notes
 
-- Real deployment (not a notebook-only demo)
-- Clean API-driven inference workflow
-- Responsive UI designed for straightforward usage
-- Service health monitoring endpoint for reliability
+- Designed to keep the UI stable while the inference pipeline evolves
+- Backend includes health monitoring to support reliability checks
+- Deployment configured for CPU-compatible inference environments
 
 ---
 
 ## Roadmap
 
-- Improved result visualisation and UX polish
-- Faster inference and better performance
-- Stronger error reporting and observability
+- Better result visualisation (confidence, summaries, richer UI)
+- Faster inference performance and improved throughput
+- Improved error reporting and observability (logs, request tracing)
+- Stronger API contract validation to prevent frontend breakages
 
 ---
 
 ## Author
 
-**Sree Vaishnavi Rao**  
+**Vaishnav Rao**  
 GitHub: https://github.com/vaishnavirao24
-
----
-
-## License
-
-Intended for learning, experimentation, and portfolio demonstration.
-```
